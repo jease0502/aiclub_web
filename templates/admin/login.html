@@ -1,0 +1,57 @@
+{% extends "admin/login.html" %}
+
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+
+<style>
+
+
+
+#header {
+      background-color:  rgb(202, 125, 233) !important;
+    }
+#content{
+    background-color:  rgba(202, 125, 233) !important;
+}
+
+#footer{
+    background-color:  rgba(202, 125, 233) !important;
+}
+
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    background-color: rgba(1, 1, 1, 0.6);
+    background-blend-mode: multiply;
+    background-position: center center;
+}
+
+}
+</style>
+<body id="bg" style="background-image: url('{% static "/images/bg-01.jpg"%}')";>
+
+
+{% endblock %}
+
+{% block branding %}
+
+
+{% endblock %}
+
+{% block content_title %}
+<br><br>
+<h1>
+    <span style ="display:flex; justify-content: center; color: #ffffff !important">Ai Club Web Site</span>
+  </h1>
+ <br>
+{% endblock %}
+
+{% block footer %}
+<div id="footer">
+     <br> <br> <br><br><br><br><br><br>
+</div>
+{% endblock%}
