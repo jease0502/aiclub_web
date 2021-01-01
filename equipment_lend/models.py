@@ -16,7 +16,7 @@ class LendRecord(models.Model):
     user_id = models.CharField(max_length=20, primary_key=True)
     equipment_id = models.CharField(max_length=20)
     lend_date = models.DateTimeField(auto_now_add=True)
-    borrow_date = models.DateTimeField(auto_now=True)
+    borrow_date = models.DateTimeField(auto_now=False)
 
 
 class BelongingsImformation(models.Model):
@@ -25,7 +25,7 @@ class BelongingsImformation(models.Model):
     serial_number = models.CharField(max_length=20)
     property_name = models.CharField(max_length=20)
     property_price = models.CharField(max_length=20)
-    purchase_date = models.DateTimeField(auto_now=True)
+    purchase_date = models.DateTimeField(auto_now=False)
     placement = models.CharField(max_length=20)
     property_status = models.CharField(max_length=20)
     company_id = models.CharField(max_length=20)
